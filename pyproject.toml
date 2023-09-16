@@ -17,6 +17,7 @@ dependencies = [
     "torch>=2.0",
     "torchvision>=0.13",
     "torch_tools @ git+https://github.com/jdenholm/TorchTools.git",
+    "kaggle",
     "matplotlib",
 ]
 
@@ -37,3 +38,4 @@ lint = [
 
 [tool.setuptools]
 package-dir = {}
+py-modules = ["its_pikachu"]
