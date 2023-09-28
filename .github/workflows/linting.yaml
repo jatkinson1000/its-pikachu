@@ -30,10 +30,10 @@ jobs:
       uses: psf/black@stable
     - name: Lint with pylint
       if: always()
-      run: pylint archeryutils/
+      run: pylint pokeml/
     - name: Lint with pydocstyle
       if: always()
-      run: pydocstyle --convention=numpy archeryutils/
+      run: pydocstyle --convention=numpy pokeml/
     - name: Lint with mypy
       if: always()
-      run: mypy archeryutils/
+      run: mypy pokeml/
