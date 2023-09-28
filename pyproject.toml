@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "its_pikachu"
+name = "pokeml"
 version = "0.0.0"
 description = "Machine Learning Pokemon Applictions."
 authors = [
@@ -14,11 +14,13 @@ license = {file = "LICENSE.md"}
 requires-python = ">=3.9.10"
 
 dependencies = [
+    "pandas",
     "torch>=2.0",
     "torchvision>=0.13",
     "torch_tools @ git+https://github.com/jdenholm/TorchTools.git",
     "kaggle",
     "matplotlib",
+    "jupyter",
 ]
 
 [project.optional-dependencies]
@@ -26,7 +28,7 @@ dependencies = [
 #     "pytest>=7.2.0",
 # ]
 lint = [
-    "black>=22.12.0",
+    "black[jupyter]>=22.12.0",
     "pylint",
     "pydocstyle",
     "mypy>=1.0.0",
@@ -38,4 +40,4 @@ lint = [
 
 [tool.setuptools]
 package-dir = {}
-py-modules = ["its_pikachu"]
+py-modules = ["pokeml"]
